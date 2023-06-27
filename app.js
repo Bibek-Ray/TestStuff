@@ -43,9 +43,6 @@ db.collection('details').insertOne(data,function(err, collection){
 
 
 app.get('/',function(req,res){
-res.set({
-	'Access-control-Allow-Origin': '*'
-	});
 return res.redirect('signup.html');
 }).listen(3000)
 
