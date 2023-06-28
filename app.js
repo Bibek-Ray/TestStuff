@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*'); // Replace with your frontend origin
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,access-control-allow-origin');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,access-control-allow-origin,access-control-allow-credentials');
   res.setHeader('Access-Control-Allow-Credentials', true);
   next();
 });
